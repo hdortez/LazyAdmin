@@ -92,7 +92,8 @@ Function Get-Users {
         'state',
         'country',
         'description',
-        'lastlogondate'
+        'lastlogondate',
+        'employeeId'
       )
 
       # Get enabled, disabled or both users
@@ -158,6 +159,7 @@ Function Get-AllADUsers {
         "Country" = $_.Country
         "Description" = $_.Description
         "Last login" = $_.lastlogondate
+        "Employee ID" = $_.employeeId
       }
     }
   }
